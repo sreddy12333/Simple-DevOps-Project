@@ -13,7 +13,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    ```sh
    yum install java-1.8*
       #yum -y install java-1.8.0-openjdk
-      #Note: Remove the old version of java and install new version
+         # ==> Note: Remove the old version of java and install new version
    ```
 
 1. Confirm Java Version and set the java home
@@ -22,7 +22,7 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    find /usr/lib/jvm/java-1.8* | head -n 3
    vi .bash_profile
   	 JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-1.el8_0.x86_64
-  	  PATH=$PATH:$JAVA_HOME
+  	  PATH=$PATH:$JAVA_HOME:$HOME/bin
     # To set it permanently update your .bash_profile
    vi ~/.bash_profile
    ```
